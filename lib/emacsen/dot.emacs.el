@@ -12,6 +12,7 @@
 (require 'smartparens-config)
 (require 'uniquify)
 (require 'vc)
+(require 'yaml-mode)
 
 (slime-setup '(slime-fancy))
 
@@ -40,6 +41,7 @@
 (pushnew (cons "\\.cmake\\'" 'cmake-mode) auto-mode-alist :test 'equal)
 (pushnew (cons "CMakeLists\\.txt\\'" 'cmake-mode)
          auto-mode-alist :test 'equal)
+(pushnew (cons "\\.yml\\'" 'yaml-mode) auto-mode-alist :test 'equal)
 
 ;;; Mode hooks
 

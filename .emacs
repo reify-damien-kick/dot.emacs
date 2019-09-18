@@ -27,7 +27,7 @@
      ("melpa" . "http://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (groovy-mode tide smartparens paredit company exec-path-from-shell cider projectile scala-mode sbt-mode hydra)))
+    (yaml-mode groovy-mode tide smartparens paredit company exec-path-from-shell cider projectile scala-mode sbt-mode hydra)))
  '(require-final-newline (quote ask))
  '(show-paren-mode t)
  '(uniquify-buffer-name-style (quote reverse) nil (uniquify))
