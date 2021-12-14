@@ -6,7 +6,7 @@
 (add-to-list 'load-path "~/lib/emacsen")
 (add-to-list 'load-path "~/lib/emacsen/slime")
 
-(require 'cl)
+(require 'cl-lib)
 (require 'cmake-mode)
 (require 'slime)
 (require 'smartparens-config)
@@ -33,15 +33,15 @@
 
 ;; The following two forms don't seem to get evaluated by GNU Emacs
 ;; when config.el is loaded.
-(pushnew (cons "\\.cl\\'" 'lisp-mode) auto-mode-alist :test 'equal)
-(pushnew (cons "\\.asd\\'" 'lisp-mode) auto-mode-alist :test 'equal)
-(pushnew (cons "\\.h\\'" 'c++-mode) auto-mode-alist :test 'equal)
-(pushnew (cons "\\.ii\\'" 'c++-mode) auto-mode-alist :test 'equal)
-(pushnew (cons "\\.ipp\\'" 'c++-mode) auto-mode-alist :test 'equal)
-(pushnew (cons "\\.cmake\\'" 'cmake-mode) auto-mode-alist :test 'equal)
-(pushnew (cons "CMakeLists\\.txt\\'" 'cmake-mode)
-         auto-mode-alist :test 'equal)
-(pushnew (cons "\\.yml\\'" 'yaml-mode) auto-mode-alist :test 'equal)
+(cl-pushnew (cons "\\.cl\\'" 'lisp-mode) auto-mode-alist :test 'equal)
+(cl-pushnew (cons "\\.asd\\'" 'lisp-mode) auto-mode-alist :test 'equal)
+(cl-pushnew (cons "\\.h\\'" 'c++-mode) auto-mode-alist :test 'equal)
+(cl-pushnew (cons "\\.ii\\'" 'c++-mode) auto-mode-alist :test 'equal)
+(cl-pushnew (cons "\\.ipp\\'" 'c++-mode) auto-mode-alist :test 'equal)
+(cl-pushnew (cons "\\.cmake\\'" 'cmake-mode) auto-mode-alist :test 'equal)
+(cl-pushnew (cons "CMakeLists\\.txt\\'" 'cmake-mode)
+            auto-mode-alist :test 'equal)
+(cl-pushnew (cons "\\.yml\\'" 'yaml-mode) auto-mode-alist :test 'equal)
 
 ;;; Mode hooks
 
