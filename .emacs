@@ -15,6 +15,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(elpy-rpc-python-command "python3")
  '(exec-path-from-shell-variables '("PATH" "MANPATH"))
  '(indent-tabs-mode nil)
  '(inferior-lisp-program "/usr/local/bin/sbcl --noinform" t)
@@ -25,7 +26,8 @@
    '(("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa" . "http://melpa.org/packages/")))
  '(package-selected-packages
-   '(cl-lib yaml-mode groovy-mode tide smartparens paredit company exec-path-from-shell cider projectile scala-mode sbt-mode hydra))
+   '(lsp-python-ms lsp-mode elpy cl-lib yaml-mode groovy-mode tide smartparens paredit company exec-path-from-shell cider projectile scala-mode sbt-mode hydra))
+ '(python-shell-interpreter "python")
  '(require-final-newline 'ask)
  '(show-paren-mode t)
  '(uniquify-buffer-name-style 'reverse nil (uniquify))
