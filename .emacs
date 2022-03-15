@@ -26,7 +26,7 @@
    '(("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa" . "http://melpa.org/packages/")))
  '(package-selected-packages
-   '(lsp-python-ms lsp-mode elpy cl-lib yaml-mode groovy-mode tide smartparens paredit company exec-path-from-shell cider projectile scala-mode sbt-mode slime hydra))
+   '(terraform-mode lsp-python-ms lsp-mode elpy cl-lib yaml-mode groovy-mode tide smartparens paredit company exec-path-from-shell cider projectile scala-mode sbt-mode slime hydra))
  '(python-shell-interpreter "python")
  '(require-final-newline 'ask)
  '(show-paren-mode t)
