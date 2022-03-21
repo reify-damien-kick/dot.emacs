@@ -1,10 +1,10 @@
 ;;; This file has configuration code which is common to both GNU Emacs
-;;; and XEmacs.
+;;; and XEmacs. Or used to, back when I still used to use XEmacs,
+;;; too. But now <shrug /> I don't remember anymore.
 
 (exec-path-from-shell-initialize)
 
-(add-to-list 'load-path "~/lib/emacsen")
-(add-to-list 'load-path "~/lib/emacsen/slime")
+(add-to-list 'load-path (expand-file-name "~/lib/emacsen"))
 
 (require 'cl-lib)
 (require 'cmake-mode)
