@@ -8,6 +8,7 @@
 
 (require 'cl-lib)
 (require 'cmake-mode)
+(require 'reify)
 (require 'slime)
 (require 'smartparens-config)
 (require 'uniquify)
