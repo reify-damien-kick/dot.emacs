@@ -7,6 +7,7 @@
 (add-to-list 'load-path (expand-file-name "~/lib/emacsen"))
 
 (require 'cl-lib)
+(require 'clj-config)
 (require 'cmake-mode)
 (require 'slime)
 (require 'smartparens-config)
