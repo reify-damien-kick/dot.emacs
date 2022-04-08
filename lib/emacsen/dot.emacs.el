@@ -68,6 +68,7 @@
             (make-local-variable 'show-trailing-whitespace)
             (setq show-trailing-whitespace t)))
 
+;;; Add smartparens-mode to many a hook
 (add-hook 'cider-repl-mode-hook #'smartparens-mode)
 (add-hook 'clojure-mode-hook #'smartparens-mode)
 (add-hook 'emacs-lisp-mode-hook #'smartparens-mode)
